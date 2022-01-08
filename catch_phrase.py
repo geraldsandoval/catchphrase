@@ -41,8 +41,8 @@ class CatchPhrase(object):
         self.init_button(gpio_pin=37, callback_func=self.add_point_team_two)
 
     def init_button(self, gpio_pin, callback_func):
-        GPIO.setup(gpio_pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-        GPIO.add_event_detect(gpio_pin, GPIO.RISING, callback=callback_func)
+        GPIO.setup(gpio_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+        GPIO.add_event_detect(gpio_pin, GPIO.RISING, callback=callback_func, bouncetime=1000)
 
 
     '''
@@ -68,18 +68,22 @@ class CatchPhrase(object):
     def skip(self, channel):
         print("SKIP PRESSED")
         #self.update_lcd("SKIP PRESSED")
+        sleep(0.5)
 
     def choose_category(self, channel):
         print("CATEGORY PRESSED")
         #self.update_lcd("CATEGORY PRESSED")
+        sleep(0.5)
 
     def add_point_team_one(self, channel):
         print("TEAM ONE PRESSED")
         #self.update_lcd("TEAM ONE PRESSED")
+        sleep(0.5)
 
     def add_point_team_two(self, channel):
         print("TEAM TWO PRESSED")
         #self.update_lcd("TEAM TWO PRESSED")
+        sleep(0.5)
 
     def start(self, channel):
         pass
