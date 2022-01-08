@@ -1,7 +1,7 @@
 {
-  "star wars": {
-    "subcategories": ["entertainment", "sci-fi"],
-    "phrases": [
+  "name": "Star Wars",
+  "categories": ["Star wars", "Entertainment", "Sci-Fi"],
+  "phrases": [
       "Qui-Gon Jinn",
       "Obi-Wan Kenobi",
       "Darth Vader",
@@ -59,7 +59,6 @@
       "General Grievous",
       "Poe Dameron",
       "Finn",
-      "Uncle Ben",
-    ]
-  }
+      "Uncle Ben"
+  ]
 }
